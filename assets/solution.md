@@ -112,3 +112,6 @@ TODO: The command should create an internal Meilisearch master key for each tena
 * [18.01.2022.log.txt](18.01.2022.log.txt)
 * [18.01.2022-ingress.png](18.01.2022-ingress.png)
 
+![SaaS Schema](saas-single-tenant-impl.png)
+
+
