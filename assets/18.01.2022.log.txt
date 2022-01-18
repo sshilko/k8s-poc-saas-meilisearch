@@ -1,0 +1,412 @@
+Now is Tue Jan 18 00:19:24 CET 2022
+
+   Static hostname: sshilko-pc
+         Icon name: computer-laptop
+           Chassis: laptop
+        Machine ID: b9345171accd4bbdb68fb20877168a24
+           Boot ID: fea2ff0e2bb64bae93b22fa1c1d39b71
+  Operating System: Ubuntu 18.04.6 LTS
+            Kernel: Linux 5.4.0-91-generic
+      Architecture: x86-64
+Client Version: version.Info{Major:"1", Minor:"23", GitVersion:"v1.23.1", GitCommit:"86ec240af8cbd1b60bcc4c03c20da9b98005b92e", GitTreeState:"clean", BuildDate:"2021-12-16T11:41:01Z", GoVersion:"go1.17.5", Compiler:"gc", Platform:"linux/amd64"}
+Cluster created ...
+namespace/kubernetes-dashboard created
+serviceaccount/kubernetes-dashboard created
+service/kubernetes-dashboard created
+secret/kubernetes-dashboard-certs created
+secret/kubernetes-dashboard-csrf created
+secret/kubernetes-dashboard-key-holder created
+configmap/kubernetes-dashboard-settings created
+role.rbac.authorization.k8s.io/kubernetes-dashboard created
+clusterrole.rbac.authorization.k8s.io/kubernetes-dashboard created
+rolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created
+clusterrolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created
+deployment.apps/kubernetes-dashboard created
+service/dashboard-metrics-scraper created
+deployment.apps/dashboard-metrics-scraper created
+namespace/kubernetes-dashboard unchanged
+serviceaccount/kubernetes-dashboard unchanged
+service/kubernetes-dashboard unchanged
+secret/kubernetes-dashboard-certs unchanged
+secret/kubernetes-dashboard-csrf unchanged
+secret/kubernetes-dashboard-key-holder unchanged
+configmap/kubernetes-dashboard-settings unchanged
+role.rbac.authorization.k8s.io/kubernetes-dashboard unchanged
+clusterrole.rbac.authorization.k8s.io/kubernetes-dashboard unchanged
+rolebinding.rbac.authorization.k8s.io/kubernetes-dashboard unchanged
+clusterrolebinding.rbac.authorization.k8s.io/kubernetes-dashboard unchanged
+deployment.apps/kubernetes-dashboard unchanged
+service/dashboard-metrics-scraper unchanged
+deployment.apps/dashboard-metrics-scraper unchanged
+serviceaccount/admin-user created
+clusterrolebinding.rbac.authorization.k8s.io/admin-user created
+K8S Dashboard available with 'kubectl proxy' at http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/login
+K8S Dashboard ServiceAccount: admin-user-token-42hnm
+K8S Dashboard Secret: eyJhbGciOiJSUzI1NiIsImtpZCI6IlFvUGFWUGFleE9XNFJIWU9PclFXQVJnNGlnc05YdldSNG5MY1RlV2hSQmcifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlcm5ldGVzLWRhc2hib2FyZCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJhZG1pbi11c2VyLXRva2VuLTQyaG5tIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImFkbWluLXVzZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJmM2UwYjQ4OC1kMDlkLTRjZDMtODk4Mi1lNjZjNTBjNzI4ZjEiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZXJuZXRlcy1kYXNoYm9hcmQ6YWRtaW4tdXNlciJ9.lvJ8XhevqvOl1NTKgYs2k04A1QO_91uQnruIBT8HtmEtspl0O3s6RCj-ikcmo8fLlLBFLVfYM3eL4hhzlHvv3WOudhHOYqi9YdKh-PrCdVNJMrF7pSD8XMkVXk7L7QQhlMViAQjNgqZB47fHHQX21uvOPQ87oMRvIEH8Vg2p04pUr9H0frcKjd_uwWlvcRFH3EfeSefOR479JZec-sw0c25XmXBDA8ECE60EZJ4JO45KKFt57NXSRyW5TDirVWJb7Xt3RnRta-LrIsl-LdoBYj1p7wJJlW4rvI4yTAp4TBLeOI__b_SlqrAPWZU0WFHN-SHRYdxqGlEXIuvwy43Xog
+[0;32mKubernetes control plane[0m is running at [0;33mhttps://127.0.0.1:6443[0m
+[0;32mCoreDNS[0m is running at [0;33mhttps://127.0.0.1:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy[0m
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+NAME                   STATUS   AGE
+default                Active   42s
+kube-node-lease        Active   43s
+kube-public            Active   43s
+kube-system            Active   44s
+kubernetes-dashboard   Active   3s
+local-path-storage     Active   37s
+namespace/ingress-nginx created
+serviceaccount/ingress-nginx created
+configmap/ingress-nginx-controller created
+clusterrole.rbac.authorization.k8s.io/ingress-nginx created
+clusterrolebinding.rbac.authorization.k8s.io/ingress-nginx created
+role.rbac.authorization.k8s.io/ingress-nginx created
+rolebinding.rbac.authorization.k8s.io/ingress-nginx created
+service/ingress-nginx-controller-admission created
+service/ingress-nginx-controller created
+deployment.apps/ingress-nginx-controller created
+ingressclass.networking.k8s.io/nginx created
+validatingwebhookconfiguration.admissionregistration.k8s.io/ingress-nginx-admission created
+serviceaccount/ingress-nginx-admission created
+clusterrole.rbac.authorization.k8s.io/ingress-nginx-admission created
+clusterrolebinding.rbac.authorization.k8s.io/ingress-nginx-admission created
+role.rbac.authorization.k8s.io/ingress-nginx-admission created
+rolebinding.rbac.authorization.k8s.io/ingress-nginx-admission created
+job.batch/ingress-nginx-admission-create created
+job.batch/ingress-nginx-admission-patch created
+pod/ingress-nginx-controller-674cb6ff57-7c2dj condition met
+K8S Cluster up
+namespace/ns-tenant0 created
+serviceaccount/meilisearch created
+configmap/meilisearch-environment created
+statefulset.apps/meilisearch created
+service/ns-tenant0-meilisearch-service created
+K8S Waiting for Ingress ...
+NAME                             TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE   SELECTOR
+ns-tenant0-meilisearch-service   ClusterIP   10.96.184.132   <none>        80/TCP    0s    app.kubernetes.io/instance=meilisearch,app.kubernetes.io/name=meilisearch
+ingress.networking.k8s.io/ingress-meilisearch-ns-tenant0 created
+NAME                             CLASS    HOSTS                           ADDRESS   PORTS   AGE
+ingress-meilisearch-ns-tenant0   <none>   ns-tenant0.meilisearch.frb.io             80      0s
+Name:             ingress-meilisearch-ns-tenant0
+Labels:           <none>
+Namespace:        ns-tenant0
+Address:          
+Default backend:  default-http-backend:80 (<error: endpoints "default-http-backend" not found>)
+Rules:
+  Host                           Path  Backends
+  ----                           ----  --------
+  ns-tenant0.meilisearch.frb.io  
+                                 /   ns-tenant0-meilisearch-service:80 (<none>)
+Annotations:                     <none>
+Events:
+  Type    Reason  Age   From                      Message
+  ----    ------  ----  ----                      -------
+  Normal  Sync    0s    nginx-ingress-controller  Scheduled for sync
+Name:         nginx
+Labels:       app.kubernetes.io/component=controller
+              app.kubernetes.io/instance=ingress-nginx
+              app.kubernetes.io/managed-by=Helm
+              app.kubernetes.io/name=ingress-nginx
+              app.kubernetes.io/version=1.1.1
+              helm.sh/chart=ingress-nginx-4.0.15
+Annotations:  <none>
+Controller:   k8s.io/ingress-nginx
+Events:       <none>
+pod/meilisearch-0 condition met
+NAME            READY   STATUS    RESTARTS   AGE   IP           NODE               NOMINATED NODE   READINESS GATES
+meilisearch-0   1/1     Running   0          20s   10.244.1.3   cluster0-worker2   <none>           <none>
+^[[1;2C*   Trying 127.0.0.1:7700...
+* Connected to 127.0.0.1 (127.0.0.1) port 7700 (#0)
+> GET /health HTTP/1.1
+
+> Host: 127.0.0.1:7700
+
+> User-Agent: curl/7.79.1
+
+> Accept: */*
+
+> 
+
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+
+< content-length: 22
+
+< content-type: application/json
+
+< date: Mon, 17 Jan 2022 23:40:29 GMT
+
+< 
+
+* Connection #0 to host 127.0.0.1 left intact
+{"status":"available"}NAME                             TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE   SELECTOR
+ns-tenant0-meilisearch-service   ClusterIP   10.96.184.132   <none>        80/TCP    20s   app.kubernetes.io/instance=meilisearch,app.kubernetes.io/name=meilisearch
+NAME                             ENDPOINTS         AGE
+ns-tenant0-meilisearch-service   10.244.1.3:7700   20s
+namespace/ns-tenant0 unchanged
+serviceaccount/meilisearch unchanged
+configmap/meilisearch-environment unchanged
+statefulset.apps/meilisearch unchanged
+service/ns-tenant0-meilisearch-service unchanged
+K8S Waiting for Ingress ...
+NAME                             TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE   SELECTOR
+ns-tenant0-meilisearch-service   ClusterIP   10.96.184.132   <none>        80/TCP    39s   app.kubernetes.io/instance=meilisearch,app.kubernetes.io/name=meilisearch
+ingress.networking.k8s.io/ingress-meilisearch-ns-tenant0 unchanged
+NAME                             CLASS    HOSTS                           ADDRESS     PORTS   AGE
+ingress-meilisearch-ns-tenant0   <none>   ns-tenant0.meilisearch.frb.io   localhost   80      40s
+Name:             ingress-meilisearch-ns-tenant0
+Labels:           <none>
+Namespace:        ns-tenant0
+Address:          localhost
+Default backend:  default-http-backend:80 (<error: endpoints "default-http-backend" not found>)
+Rules:
+  Host                           Path  Backends
+  ----                           ----  --------
+  ns-tenant0.meilisearch.frb.io  
+                                 /   ns-tenant0-meilisearch-service:80 (10.244.1.3:7700)
+Annotations:                     <none>
+Events:
+  Type    Reason  Age               From                      Message
+  ----    ------  ----              ----                      -------
+  Normal  Sync    9s (x2 over 40s)  nginx-ingress-controller  Scheduled for sync
+Name:         nginx
+Labels:       app.kubernetes.io/component=controller
+              app.kubernetes.io/instance=ingress-nginx
+              app.kubernetes.io/managed-by=Helm
+              app.kubernetes.io/name=ingress-nginx
+              app.kubernetes.io/version=1.1.1
+              helm.sh/chart=ingress-nginx-4.0.15
+Annotations:  <none>
+Controller:   k8s.io/ingress-nginx
+Events:       <none>
+pod/meilisearch-0 condition met
+NAME            READY   STATUS    RESTARTS   AGE   IP           NODE               NOMINATED NODE   READINESS GATES
+meilisearch-0   1/1     Running   0          40s   10.244.1.3   cluster0-worker2   <none>           <none>
+*   Trying 127.0.0.1:7700...
+* Connected to 127.0.0.1 (127.0.0.1) port 7700 (#0)
+> GET /health HTTP/1.1
+
+> Host: 127.0.0.1:7700
+
+> User-Agent: curl/7.79.1
+
+> Accept: */*
+
+> 
+
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+
+< content-length: 22
+
+< content-type: application/json
+
+< date: Mon, 17 Jan 2022 23:40:49 GMT
+
+< 
+
+* Connection #0 to host 127.0.0.1 left intact
+{"status":"available"}NAME                             TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE   SELECTOR
+ns-tenant0-meilisearch-service   ClusterIP   10.96.184.132   <none>        80/TCP    40s   app.kubernetes.io/instance=meilisearch,app.kubernetes.io/name=meilisearch
+NAME                             ENDPOINTS         AGE
+ns-tenant0-meilisearch-service   10.244.1.3:7700   40s
+namespace/ns-tenant2 created
+serviceaccount/meilisearch created
+configmap/meilisearch-environment created
+statefulset.apps/meilisearch created
+service/ns-tenant2-meilisearch-service created
+K8S Waiting for Ingress ...
+NAME                             TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE   SELECTOR
+ns-tenant2-meilisearch-service   ClusterIP   10.96.112.212   <none>        80/TCP    0s    app.kubernetes.io/instance=meilisearch,app.kubernetes.io/name=meilisearch
+ingress.networking.k8s.io/ingress-meilisearch-ns-tenant2 created
+NAME                             CLASS    HOSTS                           ADDRESS   PORTS   AGE
+ingress-meilisearch-ns-tenant2   <none>   ns-tenant2.meilisearch.frb.io             80      1s
+Name:             ingress-meilisearch-ns-tenant2
+Labels:           <none>
+Namespace:        ns-tenant2
+Address:          
+Default backend:  default-http-backend:80 (<error: endpoints "default-http-backend" not found>)
+Rules:
+  Host                           Path  Backends
+  ----                           ----  --------
+  ns-tenant2.meilisearch.frb.io  
+                                 /   ns-tenant2-meilisearch-service:80 (<none>)
+Annotations:                     <none>
+Events:
+  Type    Reason  Age   From                      Message
+  ----    ------  ----  ----                      -------
+  Normal  Sync    0s    nginx-ingress-controller  Scheduled for sync
+Name:         nginx
+Labels:       app.kubernetes.io/component=controller
+              app.kubernetes.io/instance=ingress-nginx
+              app.kubernetes.io/managed-by=Helm
+              app.kubernetes.io/name=ingress-nginx
+              app.kubernetes.io/version=1.1.1
+              helm.sh/chart=ingress-nginx-4.0.15
+Annotations:  <none>
+Controller:   k8s.io/ingress-nginx
+Events:       <none>
+pod/meilisearch-0 condition met
+NAME            READY   STATUS    RESTARTS   AGE   IP           NODE              NOMINATED NODE   READINESS GATES
+meilisearch-0   1/1     Running   0          20s   10.244.2.3   cluster0-worker   <none>           <none>
+*   Trying 127.0.0.1:7700...
+* Connected to 127.0.0.1 (127.0.0.1) port 7700 (#0)
+> GET /health HTTP/1.1
+
+> Host: 127.0.0.1:7700
+
+> User-Agent: curl/7.79.1
+
+> Accept: */*
+
+> 
+
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+
+< content-length: 22
+
+< content-type: application/json
+
+< date: Mon, 17 Jan 2022 23:42:26 GMT
+
+< 
+
+* Connection #0 to host 127.0.0.1 left intact
+{"status":"available"}NAME                             TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE   SELECTOR
+ns-tenant2-meilisearch-service   ClusterIP   10.96.112.212   <none>        80/TCP    20s   app.kubernetes.io/instance=meilisearch,app.kubernetes.io/name=meilisearch
+NAME                             ENDPOINTS         AGE
+ns-tenant2-meilisearch-service   10.244.2.3:7700   21s
+namespace/ns-tenant3 created
+serviceaccount/meilisearch created
+configmap/meilisearch-environment created
+statefulset.apps/meilisearch created
+service/ns-tenant3-meilisearch-service created
+K8S Waiting for Ingress ...
+NAME                             TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)   AGE   SELECTOR
+ns-tenant3-meilisearch-service   ClusterIP   10.96.241.65   <none>        80/TCP    0s    app.kubernetes.io/instance=meilisearch,app.kubernetes.io/name=meilisearch
+ingress.networking.k8s.io/ingress-meilisearch-ns-tenant3 created
+NAME                             CLASS    HOSTS                           ADDRESS   PORTS   AGE
+ingress-meilisearch-ns-tenant3   <none>   ns-tenant3.meilisearch.frb.io             80      0s
+Name:             ingress-meilisearch-ns-tenant3
+Labels:           <none>
+Namespace:        ns-tenant3
+Address:          
+Default backend:  default-http-backend:80 (<error: endpoints "default-http-backend" not found>)
+Rules:
+  Host                           Path  Backends
+  ----                           ----  --------
+  ns-tenant3.meilisearch.frb.io  
+                                 /   ns-tenant3-meilisearch-service:80 (<none>)
+Annotations:                     <none>
+Events:
+  Type    Reason  Age   From                      Message
+  ----    ------  ----  ----                      -------
+  Normal  Sync    0s    nginx-ingress-controller  Scheduled for sync
+Name:         nginx
+Labels:       app.kubernetes.io/component=controller
+              app.kubernetes.io/instance=ingress-nginx
+              app.kubernetes.io/managed-by=Helm
+              app.kubernetes.io/name=ingress-nginx
+              app.kubernetes.io/version=1.1.1
+              helm.sh/chart=ingress-nginx-4.0.15
+Annotations:  <none>
+Controller:   k8s.io/ingress-nginx
+Events:       <none>
+pod/meilisearch-0 condition met
+NAME            READY   STATUS    RESTARTS   AGE   IP           NODE              NOMINATED NODE   READINESS GATES
+meilisearch-0   1/1     Running   0          10s   10.244.2.4   cluster0-worker   <none>           <none>
+*   Trying 127.0.0.1:7700...
+* Connected to 127.0.0.1 (127.0.0.1) port 7700 (#0)
+> GET /health HTTP/1.1
+
+> Host: 127.0.0.1:7700
+
+> User-Agent: curl/7.79.1
+
+> Accept: */*
+
+> 
+
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+
+< content-length: 22
+
+< content-type: application/json
+
+< date: Mon, 17 Jan 2022 23:42:46 GMT
+
+< 
+
+* Connection #0 to host 127.0.0.1 left intact
+{"status":"available"}NAME                             TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)   AGE   SELECTOR
+ns-tenant3-meilisearch-service   ClusterIP   10.96.241.65   <none>        80/TCP    10s   app.kubernetes.io/instance=meilisearch,app.kubernetes.io/name=meilisearch
+NAME                             ENDPOINTS         AGE
+ns-tenant3-meilisearch-service   10.244.2.4:7700   10s
+namespace/ns-tenant1 created
+serviceaccount/meilisearch created
+configmap/meilisearch-environment created
+statefulset.apps/meilisearch created
+service/ns-tenant1-meilisearch-service created
+K8S Waiting for Ingress ...
+NAME                             TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)   AGE   SELECTOR
+ns-tenant1-meilisearch-service   ClusterIP   10.96.44.227   <none>        80/TCP    0s    app.kubernetes.io/instance=meilisearch,app.kubernetes.io/name=meilisearch
+ingress.networking.k8s.io/ingress-meilisearch-ns-tenant1 created
+NAME                             CLASS    HOSTS                           ADDRESS   PORTS   AGE
+ingress-meilisearch-ns-tenant1   <none>   ns-tenant1.meilisearch.frb.io             80      0s
+Name:             ingress-meilisearch-ns-tenant1
+Labels:           <none>
+Namespace:        ns-tenant1
+Address:          
+Default backend:  default-http-backend:80 (<error: endpoints "default-http-backend" not found>)
+Rules:
+  Host                           Path  Backends
+  ----                           ----  --------
+  ns-tenant1.meilisearch.frb.io  
+                                 /   ns-tenant1-meilisearch-service:80 (<none>)
+Annotations:                     <none>
+Events:
+  Type    Reason  Age   From                      Message
+  ----    ------  ----  ----                      -------
+  Normal  Sync    0s    nginx-ingress-controller  Scheduled for sync
+Name:         nginx
+Labels:       app.kubernetes.io/component=controller
+              app.kubernetes.io/instance=ingress-nginx
+              app.kubernetes.io/managed-by=Helm
+              app.kubernetes.io/name=ingress-nginx
+              app.kubernetes.io/version=1.1.1
+              helm.sh/chart=ingress-nginx-4.0.15
+Annotations:  <none>
+Controller:   k8s.io/ingress-nginx
+Events:       <none>
+pod/meilisearch-0 condition met
+NAME            READY   STATUS    RESTARTS   AGE   IP           NODE               NOMINATED NODE   READINESS GATES
+meilisearch-0   1/1     Running   0          20s   10.244.1.4   cluster0-worker2   <none>           <none>
+*   Trying 127.0.0.1:7700...
+* Connected to 127.0.0.1 (127.0.0.1) port 7700 (#0)
+> GET /health HTTP/1.1
+
+> Host: 127.0.0.1:7700
+
+> User-Agent: curl/7.79.1
+
+> Accept: */*
+
+> 
+
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+
+< content-length: 22
+
+< content-type: application/json
+
+< date: Mon, 17 Jan 2022 23:44:09 GMT
+
+< 
+
+* Connection #0 to host 127.0.0.1 left intact
+{"status":"available"}NAME                             TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)   AGE   SELECTOR
+ns-tenant1-meilisearch-service   ClusterIP   10.96.44.227   <none>        80/TCP    21s   app.kubernetes.io/instance=meilisearch,app.kubernetes.io/name=meilisearch
+NAME                             ENDPOINTS         AGE
+ns-tenant1-meilisearch-service   10.244.1.4:7700   21s

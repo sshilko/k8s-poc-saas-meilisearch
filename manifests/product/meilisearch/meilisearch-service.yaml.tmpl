@@ -1,0 +1,19 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: $NAME-meilisearch-service
+  labels:
+    app.kubernetes.io/name: meilisearch
+    app.kubernetes.io/instance: meilisearch
+spec:
+  type: ClusterIP
+  externalName: $NAME.meilisearch.$DNS
+  ports:
+    - port: 80         #service-available on-this-port
+      targetPort: 7700 #service-targets-pod-port
+      protocol: TCP
+      name: http-api-meilisearch
+  selector:
+    app.kubernetes.io/name: meilisearch
+    app.kubernetes.io/instance: meilisearch
