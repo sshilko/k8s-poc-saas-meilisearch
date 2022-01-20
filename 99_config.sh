@@ -5,7 +5,7 @@ set -e
 # This script CONFIGURE cluster               #
 ###############################################
 
-hash jq mkdir docker curl sha256sum basename hostnamectl date envsubst || echo "At least one dependency is missing"
+hash mkdir docker curl sha256sum basename hostnamectl date envsubst || echo "At least one dependency is missing"
 
 WORK_DIR=$(readlink -f $0 | xargs dirname)
 
