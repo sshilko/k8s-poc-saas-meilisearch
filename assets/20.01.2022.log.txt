@@ -1,0 +1,211 @@
+sshilko@~/k8s-poc-saas-meilisearch $ bash 00_cluster.up.sh 
+Now is Thu Jan 20 23:15:39 CET 2022
+
+   Static hostname: sshilko-pc
+         Icon name: computer-laptop
+           Chassis: laptop
+        Machine ID: b9345171accd4bbdb68fb20877168a24
+           Boot ID: fea2ff0e2bb64bae93b22fa1c1d39b71
+  Operating System: Ubuntu 18.04.6 LTS
+            Kernel: Linux 5.4.0-91-generic
+      Architecture: x86-64
+Client Version: version.Info{Major:"1", Minor:"23", GitVersion:"v1.23.2", GitCommit:"9d142434e3af351a628bffee3939e64c681afa4d", GitTreeState:"clean", BuildDate:"2022-01-19T17:35:46Z", GoVersion:"go1.17.5", Compiler:"gc", Platform:"linux/amd64"}
+Creating cluster "cluster0" ...
+ ✓ Ensuring node image (kindest/node:v1.21.1) 🖼
+ ✓ Preparing nodes 📦 📦 📦  
+ ✓ Writing configuration 📜 
+ ✓ Starting control-plane 🕹️ 
+ ✓ Installing CNI 🔌 
+ ✓ Installing StorageClass 💾 
+ ✓ Joining worker nodes 🚜 
+ ✓ Waiting ≤ 1m30s for control-plane = Ready ⏳ 
+ • Ready after 3s 💚
+Set kubectl context to "kind-cluster0"
+You can now use your cluster with:
+
+kubectl cluster-info --context kind-cluster0
+
+Not sure what to do next? 😅  Check out https://kind.sigs.k8s.io/docs/user/quick-start/
+Cluster created ...
+namespace/kubernetes-dashboard created
+serviceaccount/kubernetes-dashboard created
+service/kubernetes-dashboard created
+secret/kubernetes-dashboard-certs created
+secret/kubernetes-dashboard-csrf created
+secret/kubernetes-dashboard-key-holder created
+configmap/kubernetes-dashboard-settings created
+role.rbac.authorization.k8s.io/kubernetes-dashboard created
+clusterrole.rbac.authorization.k8s.io/kubernetes-dashboard created
+rolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created
+clusterrolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created
+deployment.apps/kubernetes-dashboard created
+service/dashboard-metrics-scraper created
+deployment.apps/dashboard-metrics-scraper created
+namespace/kubernetes-dashboard unchanged
+serviceaccount/kubernetes-dashboard unchanged
+service/kubernetes-dashboard unchanged
+secret/kubernetes-dashboard-certs unchanged
+secret/kubernetes-dashboard-csrf unchanged
+secret/kubernetes-dashboard-key-holder unchanged
+configmap/kubernetes-dashboard-settings unchanged
+role.rbac.authorization.k8s.io/kubernetes-dashboard unchanged
+clusterrole.rbac.authorization.k8s.io/kubernetes-dashboard unchanged
+rolebinding.rbac.authorization.k8s.io/kubernetes-dashboard unchanged
+clusterrolebinding.rbac.authorization.k8s.io/kubernetes-dashboard unchanged
+deployment.apps/kubernetes-dashboard unchanged
+service/dashboard-metrics-scraper unchanged
+deployment.apps/dashboard-metrics-scraper unchanged
+serviceaccount/admin-user created
+clusterrolebinding.rbac.authorization.k8s.io/admin-user created
+K8S Dashboard available with 'kubectl proxy' at http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/login
+K8S Dashboard ServiceAccount: admin-user-token-25zcl
+K8S Dashboard Secret: eyJhbGciOiJSUzI1NiIsImtpZCI6Ik94XzBheXBwM1pFenZEZEpMdVB5NThwZE9XeEhMaDBfU1p3TjFPVGZ3UlkifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlcm5ldGVzLWRhc2hib2FyZCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJhZG1pbi11c2VyLXRva2VuLTI1emNsIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImFkbWluLXVzZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJjODI2OTNjYi1kNDNhLTRiYzQtOGIwNy01NTA0NTJhNDEwNjQiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZXJuZXRlcy1kYXNoYm9hcmQ6YWRtaW4tdXNlciJ9.DbW6wMPDs90pjgi3ysu6kuybzqMlSDVGTo4FT-7m9V_bZJCHJ8EXT5ACRyskc7LUZoWWDPgqPDHtaxlGO4ggLknqRlpws7rIpi6whQPAE3YNwvw5HLLRgg2hauVhfr5OpfrXXWmIYhrBvehRLME1OwREm6E-xKiGIFA3UXEN6tgAhkIhg8zIFFJE6K0jpmwuJJUPEnyHgUrrLh1M9J4vaqdrQLbha1Wvo98atQaVcOW7gYx9sDO5MIPCDJ9vKWrMWyEBWsmdWotA2UVH1HG7mBmxUaxeLQ2SqFf6K_KVWOZXA4o0UTgti4TgDOmv32R4OVqrfptwcYNePcEE1F0CkQ
+Kubernetes control plane is running at https://127.0.0.1:6443
+CoreDNS is running at https://127.0.0.1:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+NAME                   STATUS   AGE
+default                Active   38s
+kube-node-lease        Active   40s
+kube-public            Active   40s
+kube-system            Active   40s
+kubernetes-dashboard   Active   2s
+local-path-storage     Active   34s
+namespace/ingress-nginx created
+serviceaccount/ingress-nginx created
+configmap/ingress-nginx-controller created
+clusterrole.rbac.authorization.k8s.io/ingress-nginx created
+clusterrolebinding.rbac.authorization.k8s.io/ingress-nginx created
+role.rbac.authorization.k8s.io/ingress-nginx created
+rolebinding.rbac.authorization.k8s.io/ingress-nginx created
+service/ingress-nginx-controller-admission created
+service/ingress-nginx-controller created
+deployment.apps/ingress-nginx-controller created
+ingressclass.networking.k8s.io/nginx created
+validatingwebhookconfiguration.admissionregistration.k8s.io/ingress-nginx-admission created
+serviceaccount/ingress-nginx-admission created
+clusterrole.rbac.authorization.k8s.io/ingress-nginx-admission created
+clusterrolebinding.rbac.authorization.k8s.io/ingress-nginx-admission created
+role.rbac.authorization.k8s.io/ingress-nginx-admission created
+rolebinding.rbac.authorization.k8s.io/ingress-nginx-admission created
+job.batch/ingress-nginx-admission-create created
+job.batch/ingress-nginx-admission-patch created
+
+pod/ingress-nginx-controller-674cb6ff57-gtx74 condition met
+K8S Cluster up
+sshilko@~/k8s-poc-saas-meilisearch $ 
+sshilko@~/k8s-poc-saas-meilisearch $ bash 01_saas.meilisearch.up.sh tenant0
+namespace/ns-tenant0 created
+service/ns-tenant0-meilisearch-service created
+configmap/meilisearch-environment created
+-------------- Your MasterKey is 'ns-tenant0.fSwbC7nAZ1IqP1S8JV4tZJMyC2T4JFjU'
+-------------- Your Endpoint  is 'http://ns-tenant0.meilisearch.frb.io'
+serviceaccount/meilisearch created
+statefulset.apps/meilisearch created
+K8S Waiting for Ingress ...
+ingress.networking.k8s.io/ingress-meilisearch-ns-tenant0 created
+pod/meilisearch-0 condition met
+NAME                             CLASS    HOSTS                           ADDRESS   PORTS   AGE
+ingress-meilisearch-ns-tenant0   <none>   ns-tenant0.meilisearch.frb.io             80      20s
+Name:             ingress-meilisearch-ns-tenant0
+Labels:           <none>
+Namespace:        ns-tenant0
+Address:          
+Default backend:  default-http-backend:80 (<error: endpoints "default-http-backend" not found>)
+Rules:
+  Host                           Path  Backends
+  ----                           ----  --------
+  ns-tenant0.meilisearch.frb.io  
+                                 /   ns-tenant0-meilisearch-service:80 (10.244.1.2:7700)
+Annotations:                     <none>
+Events:
+  Type    Reason  Age   From                      Message
+  ----    ------  ----  ----                      -------
+  Normal  Sync    20s   nginx-ingress-controller  Scheduled for sync
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to ns-tenant0.meilisearch.frb.io (127.0.0.1) port 80 (#0)
+> GET /keys HTTP/1.1
+> Host: ns-tenant0.meilisearch.frb.io
+> User-Agent: curl/7.58.0
+> Accept: */*
+> Authorization: Bearer ns-tenant0.fSwbC7nAZ1IqP1S8JV4tZJMyC2T4JFjU
+> 
+< HTTP/1.1 200 OK
+< Date: Thu, 20 Jan 2022 22:19:02 GMT
+< Content-Type: application/json
+< Content-Length: 615
+< Connection: keep-alive
+< 
+* Connection #0 to host ns-tenant0.meilisearch.frb.io left intact
+{"results":[{"description":"Default Search API Key (Use it to search from the frontend)","key":"7ceY6YEn3761fcad68272aac506d0011975f6c73fe5233a367b304b29d8bba7e2f48203e","actions":["search"],"indexes":["*"],"expiresAt":null,"createdAt":"2022-01-20T22:18:50Z","updatedAt":"2022-01-20T22:18:50Z"},{"description":"Default Admin API Key (Use it for all other operations. Caution! Do not use it on a public frontend)","key":"b3P9QEWY9aad5bac6a3ba483d6b2c1093b54ef5bf0d4d0d6a8665048a20ba82adad41841","actions":["*"],"indexes":["*"],"expiresAt":null,"createdAt":"2022-01-20T22:18:50Z","updatedAt":"2022-01-20T22:18:50Z"}]}%                                                                                                                                                                                                                                      
+sshilko@~/k8s-poc-saas-meilisearch $ bash 01_saas.meilisearch.up.sh tenant1
+namespace/ns-tenant1 created
+service/ns-tenant1-meilisearch-service created
+configmap/meilisearch-environment created
+-------------- Your MasterKey is 'ns-tenant1.710VG8BYPIwlwl00VotQ2QF6fwFBF5l9'
+-------------- Your Endpoint  is 'http://ns-tenant1.meilisearch.frb.io'
+serviceaccount/meilisearch created
+statefulset.apps/meilisearch created
+K8S Waiting for Ingress ...
+ingress.networking.k8s.io/ingress-meilisearch-ns-tenant1 created
+pod/meilisearch-0 condition met
+NAME                             CLASS    HOSTS                           ADDRESS   PORTS   AGE
+ingress-meilisearch-ns-tenant1   <none>   ns-tenant1.meilisearch.frb.io             80      20s
+Name:             ingress-meilisearch-ns-tenant1
+Labels:           <none>
+Namespace:        ns-tenant1
+Address:          
+Default backend:  default-http-backend:80 (<error: endpoints "default-http-backend" not found>)
+Rules:
+  Host                           Path  Backends
+  ----                           ----  --------
+  ns-tenant1.meilisearch.frb.io  
+                                 /   ns-tenant1-meilisearch-service:80 (10.244.2.4:7700)
+Annotations:                     <none>
+Events:
+  Type    Reason  Age   From                      Message
+  ----    ------  ----  ----                      -------
+  Normal  Sync    20s   nginx-ingress-controller  Scheduled for sync
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to ns-tenant1.meilisearch.frb.io (127.0.0.1) port 80 (#0)
+> GET /keys HTTP/1.1
+> Host: ns-tenant1.meilisearch.frb.io
+> User-Agent: curl/7.58.0
+> Accept: */*
+> Authorization: Bearer ns-tenant1.710VG8BYPIwlwl00VotQ2QF6fwFBF5l9
+> 
+< HTTP/1.1 200 OK
+< Date: Thu, 20 Jan 2022 22:19:28 GMT
+< Content-Type: application/json
+< Content-Length: 615
+< Connection: keep-alive
+< 
+* Connection #0 to host ns-tenant1.meilisearch.frb.io left intact
+{"results":[{"description":"Default Search API Key (Use it to search from the frontend)","key":"cSmlb7nQ2767795e9cd13696fe781bb9ce90a1ea5e0d71546521389a57ea4ca016490b21","actions":["search"],"indexes":["*"],"expiresAt":null,"createdAt":"2022-01-20T22:19:16Z","updatedAt":"2022-01-20T22:19:16Z"},{"description":"Default Admin API Key (Use it for all other operations. Caution! Do not use it on a public frontend)","key":"RgBIhOCB5e7790c83287ae33321d0b10a57677e8f3f9befe6fde72c5e07db6796ea09b62","actions":["*"],"indexes":["*"],"expiresAt":null,"createdAt":"2022-01-20T22:19:16Z","updatedAt":"2022-01-20T22:19:16Z"}]}%                                                                                                                                                                                                                                      
+sshilko@~/k8s-poc-saas-meilisearch $ curl -v -X POST  ns-tenant1.meilisearch.frb.io/indexes -H 'Content-Type: application/json' -H "Authorization: Bearer ns-tenant1.710VG8BYPIwlwl00VotQ2QF6fwFBF5l9" --data-binary '{"uid": "movies"}'
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to ns-tenant1.meilisearch.frb.io (127.0.0.1) port 80 (#0)
+> POST /indexes HTTP/1.1
+> Host: ns-tenant1.meilisearch.frb.io
+> User-Agent: curl/7.58.0
+> Accept: */*
+> Content-Type: application/json
+> Authorization: Bearer ns-tenant1.710VG8BYPIwlwl00VotQ2QF6fwFBF5l9
+> Content-Length: 17
+> 
+* upload completely sent off: 17 out of 17 bytes
+< HTTP/1.1 202 Accepted
+< Date: Thu, 20 Jan 2022 22:21:15 GMT
+< Content-Type: application/json
+< Content-Length: 118
+< Connection: keep-alive
+< 
+* Connection #0 to host ns-tenant1.meilisearch.frb.io left intact
+{"uid":0,"indexUid":"movies","status":"enqueued","type":"indexCreation","enqueuedAt":"2022-01-20T22:21:15.885250100Z"}%                                                                                                                                                                   
+sshilko@~/k8s-poc-saas-meilisearch $ bash 03_cluster.down.sh 
+Deleting cluster "cluster0" ...
+sshilko@~/k8s-poc-saas-meilisearch $

@@ -90,8 +90,7 @@ Stuck on Helm & Nginx ingress trying to apply to Kind locally.
  - cant deploy per-namespace ingress controller, Kind limitation
 Researched how to expose services via Ingress, decided first on path-based virtualhosting, then
 changed to name-based virtualhosting due to URL-rewrite incompatibilities.
-
-TODO: The command should create an internal Meilisearch master key for each tenant.
+Added Meilisearch MasterKey generation & exposure on creation
 
 ```
 

@@ -8,7 +8,7 @@ Timeline
 * 14.01.2022 basics of K8s tenancy, deployed Kubernetes - Kind, deployed Meilisearch in K8S
 * 15.01.2022 research into security and zero-trust network policy, SaaS security, Calico
 * 18.01.2022 gave up on security, continuing with Meilisearch ingress
-* TBD
+* 20.01.2022 added Meilisearch master key setup via container ENVs
 
 Check [task](assets/task.md) for details on task.
 
